@@ -19,53 +19,21 @@ img{
 }
 
 /*Grab all of the images and give them a red border*/
-img{
-  border : 3px red solid;
-}
+
+
 
 /*Grab all of the list items and give them 10px of margin*/
-li{
-  margin : 10px;
-}
 
 /*Use a selector to grab only the first list item and give it a margin-left of 0*/
-ul li:first-child{
-  margin-left:0;
-}
 
 /*Use the Thor selector to center the superhero names, but not the human aliases, of all the heroes after Thor*/
-#Thor ~ li>div>h2{
-  text-align : center;
-}
 
 /*Align the Hulk's name to the right*/
-#Thor+li div.Hulk > h2{
-  text-align : right;
-}
 
 /*Make all of the even heroes' human aliases (Steve Rogers, Bruce Banner, All of the Above) white on grey backgrounds.*/
-ul#Gallery-Box>li:nth-of-type(even)>div>h3{
-  color : white;
-  background-color:grey;
-}
 
 /*Make all of the odd heroes' human aliases (Tony Stark, Thor Odinson, Scott Lang) grey on white backgrounds.*/
-ul#Gallery-Box>li:nth-of-type(odd)>div>h3{
-  color : grey;
-  background-color:white;
-}
 
 /*When the mouse hovers over an image, change its height to 400px (For a smoother version of this effect, research CSS Transitions!)*/
 
-img:hover{
-  height : 400px;
-}
-
-img{
-  transition : 1s;
-}
-
 /*When Ant-Man's picture is clicked, shrink its height down to 50px*/
-li:nth-of-type(5) img:active {
-  height : 50px;
-}
